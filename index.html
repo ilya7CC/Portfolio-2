@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ilya porfolio</title>
+</head>
+<body>
+
+    <!-- Sprites -->
+    <svg style="display: none;">
+
+        <symbol id="phone" viewBox="0 0 24 24">
+            <path d="M23.98,2.023v4a1,1,0,0,1-2,0V3.46l-5.3,5.272a1,1,0,0,1-1.41-1.418L20.59,2.023H17.98a1,1,0,0,1,0-2h4A2,2,0,0,1,23.98,2.023Zm-.905,14.739a3.1,3.1,0,0,1,0,4.378l-.912,1.05c-8.191,7.838-28.12-12.085-20.4-20.3l1.149-1A3.085,3.085,0,0,1,7.241.928c.03.031,1.883,2.439,1.883,2.439a3.1,3.1,0,0,1-.006,4.281L7.959,9.105A12.781,12.781,0,0,0,14.89,16.05l1.465-1.165a3.1,3.1,0,0,1,4.28-.006S23.044,16.732,23.075,16.762ZM21.7,18.216s-2.393-1.842-2.424-1.872a1.1,1.1,0,0,0-1.549,0c-.027.026-2.044,1.634-2.044,1.634a1,1,0,0,1-.979.152A15,15,0,0,1,5.88,9.318a1,1,0,0,1,.145-.995S7.632,6.306,7.659,6.279a1.1,1.1,0,0,0,0-1.549C7.629,4.7,5.787,2.306,5.787,2.306a1.1,1.1,0,0,0-1.51.038l-1.149,1C-2.516,10.126,14.757,26.442,20.7,20.826l.912-1.05A1.12,1.12,0,0,0,21.7,18.216Z"/>
+        </symbol>
+
+        <symbol id="e-mail">
+            <g><path d="M19,1H5A5.006,5.006,0,0,0,0,6V18a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V6A5.006,5.006,0,0,0,19,1ZM5,3H19a3,3,0,0,1,2.78,1.887l-7.658,7.659a3.007,3.007,0,0,1-4.244,0L2.22,4.887A3,3,0,0,1,5,3ZM19,21H5a3,3,0,0,1-3-3V7.5L8.464,13.96a5.007,5.007,0,0,0,7.072,0L22,7.5V18A3,3,0,0,1,19,21Z"/></g>
+        </symbol>
+
+        <symbol id="whatsapp" viewBox="0 0 24 24">
+            <g><path d="M 12.011719 2 C 6.5057187 2 2.0234844 6.478375 2.0214844 11.984375 C 2.0204844 13.744375 2.4814687 15.462563 3.3554688 16.976562 L 2 22 L 7.2324219 20.763672 C 8.6914219 21.559672 10.333859 21.977516 12.005859 21.978516 L 12.009766 21.978516 C 17.514766 21.978516 21.995047 17.499141 21.998047 11.994141 C 22.000047 9.3251406 20.962172 6.8157344 19.076172 4.9277344 C 17.190172 3.0407344 14.683719 2.001 12.011719 2 z M 12.009766 4 C 14.145766 4.001 16.153109 4.8337969 17.662109 6.3417969 C 19.171109 7.8517969 20.000047 9.8581875 19.998047 11.992188 C 19.996047 16.396187 16.413812 19.978516 12.007812 19.978516 C 10.674812 19.977516 9.3544062 19.642812 8.1914062 19.007812 L 7.5175781 18.640625 L 6.7734375 18.816406 L 4.8046875 19.28125 L 5.2851562 17.496094 L 5.5019531 16.695312 L 5.0878906 15.976562 C 4.3898906 14.768562 4.0204844 13.387375 4.0214844 11.984375 C 4.0234844 7.582375 7.6067656 4 12.009766 4 z M 8.4765625 7.375 C 8.3095625 7.375 8.0395469 7.4375 7.8105469 7.6875 C 7.5815469 7.9365 6.9355469 8.5395781 6.9355469 9.7675781 C 6.9355469 10.995578 7.8300781 12.182609 7.9550781 12.349609 C 8.0790781 12.515609 9.68175 15.115234 12.21875 16.115234 C 14.32675 16.946234 14.754891 16.782234 15.212891 16.740234 C 15.670891 16.699234 16.690438 16.137687 16.898438 15.554688 C 17.106437 14.971687 17.106922 14.470187 17.044922 14.367188 C 16.982922 14.263188 16.816406 14.201172 16.566406 14.076172 C 16.317406 13.951172 15.090328 13.348625 14.861328 13.265625 C 14.632328 13.182625 14.464828 13.140625 14.298828 13.390625 C 14.132828 13.640625 13.655766 14.201187 13.509766 14.367188 C 13.363766 14.534188 13.21875 14.556641 12.96875 14.431641 C 12.71875 14.305641 11.914938 14.041406 10.960938 13.191406 C 10.218937 12.530406 9.7182656 11.714844 9.5722656 11.464844 C 9.4272656 11.215844 9.5585938 11.079078 9.6835938 10.955078 C 9.7955938 10.843078 9.9316406 10.663578 10.056641 10.517578 C 10.180641 10.371578 10.223641 10.267562 10.306641 10.101562 C 10.389641 9.9355625 10.347156 9.7890625 10.285156 9.6640625 C 10.223156 9.5390625 9.737625 8.3065 9.515625 7.8125 C 9.328625 7.3975 9.131125 7.3878594 8.953125 7.3808594 C 8.808125 7.3748594 8.6425625 7.375 8.4765625 7.375 z"/></g>
+        </symbol>
+
+        <symbol id="telegram" viewBox="0 0 50 50">
+            <g><path d="M 44.376953 5.9863281 C 43.889905 6.0076957 43.415817 6.1432497 42.988281 6.3144531 C 42.565113 6.4845113 40.128883 7.5243408 36.53125 9.0625 C 32.933617 10.600659 28.256963 12.603668 23.621094 14.589844 C 14.349356 18.562196 5.2382813 22.470703 5.2382812 22.470703 L 5.3046875 22.445312 C 5.3046875 22.445312 4.7547875 22.629122 4.1972656 23.017578 C 3.9185047 23.211806 3.6186028 23.462555 3.3730469 23.828125 C 3.127491 24.193695 2.9479735 24.711788 3.015625 25.259766 C 3.2532479 27.184511 5.2480469 27.730469 5.2480469 27.730469 L 5.2558594 27.734375 L 14.158203 30.78125 C 14.385177 31.538434 16.858319 39.792923 17.402344 41.541016 C 17.702797 42.507484 17.984013 43.064995 18.277344 43.445312 C 18.424133 43.635633 18.577962 43.782915 18.748047 43.890625 C 18.815627 43.933415 18.8867 43.965525 18.957031 43.994141 C 18.958531 43.994806 18.959437 43.99348 18.960938 43.994141 C 18.969579 43.997952 18.977708 43.998295 18.986328 44.001953 L 18.962891 43.996094 C 18.979231 44.002694 18.995359 44.013801 19.011719 44.019531 C 19.043456 44.030655 19.062905 44.030268 19.103516 44.039062 C 20.123059 44.395042 20.966797 43.734375 20.966797 43.734375 L 21.001953 43.707031 L 26.470703 38.634766 L 35.345703 45.554688 L 35.457031 45.605469 C 37.010484 46.295216 38.415349 45.910403 39.193359 45.277344 C 39.97137 44.644284 40.277344 43.828125 40.277344 43.828125 L 40.310547 43.742188 L 46.832031 9.7519531 C 46.998903 8.9915162 47.022612 8.334202 46.865234 7.7402344 C 46.707857 7.1462668 46.325492 6.6299361 45.845703 6.34375 C 45.365914 6.0575639 44.864001 5.9649605 44.376953 5.9863281 z M 44.429688 8.0195312 C 44.627491 8.0103707 44.774102 8.032983 44.820312 8.0605469 C 44.866523 8.0881109 44.887272 8.0844829 44.931641 8.2519531 C 44.976011 8.419423 45.000036 8.7721605 44.878906 9.3242188 L 44.875 9.3359375 L 38.390625 43.128906 C 38.375275 43.162926 38.240151 43.475531 37.931641 43.726562 C 37.616914 43.982653 37.266874 44.182554 36.337891 43.792969 L 26.632812 36.224609 L 26.359375 36.009766 L 26.353516 36.015625 L 23.451172 33.837891 L 39.761719 14.648438 A 1.0001 1.0001 0 0 0 38.974609 13 A 1.0001 1.0001 0 0 0 38.445312 13.167969 L 14.84375 28.902344 L 5.9277344 25.849609 C 5.9277344 25.849609 5.0423771 25.356927 5 25.013672 C 4.99765 24.994652 4.9871961 25.011869 5.0332031 24.943359 C 5.0792101 24.874869 5.1948546 24.759225 5.3398438 24.658203 C 5.6298218 24.456159 5.9609375 24.333984 5.9609375 24.333984 L 5.9941406 24.322266 L 6.0273438 24.308594 C 6.0273438 24.308594 15.138894 20.399882 24.410156 16.427734 C 29.045787 14.44166 33.721617 12.440122 37.318359 10.902344 C 40.914175 9.3649615 43.512419 8.2583658 43.732422 8.1699219 C 43.982886 8.0696253 44.231884 8.0286918 44.429688 8.0195312 z M 33.613281 18.792969 L 21.244141 33.345703 L 21.238281 33.351562 A 1.0001 1.0001 0 0 0 21.183594 33.423828 A 1.0001 1.0001 0 0 0 21.128906 33.507812 A 1.0001 1.0001 0 0 0 20.998047 33.892578 A 1.0001 1.0001 0 0 0 20.998047 33.900391 L 19.386719 41.146484 C 19.35993 41.068197 19.341173 41.039555 19.3125 40.947266 L 19.3125 40.945312 C 18.800713 39.30085 16.467362 31.5161 16.144531 30.439453 L 33.613281 18.792969 z M 22.640625 35.730469 L 24.863281 37.398438 L 21.597656 40.425781 L 22.640625 35.730469 z"/></g>
+        </symbol>
+
+        <symbol id="instagram" viewBox="0 0 50 50">
+            <g><path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"/></g>
+        </symbol>
+
+    </svg>
+
+    
+    <!-- Button -->
+    <div class="scroll-buttons">
+        <button type="button" class="scroll-button-up">
+            <div class="arrow-up"></div>
+        </button>
+        <button type="button" class="scroll-button-bottom">
+            <div class="arrow-bottom"></div>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="Header">
+        <div class="container">
+            <div class="header__inner">
+                <nav class="header__menu">
+                    <a class="header__menu_link" href="#About">About</a>
+                    <a class="header__menu_link" href="#Features">Features</a>
+                    <a class="header__menu_link " href="#Progress">Progress</a>
+                    <a class="header__menu_link" href="#Works">Works</a>
+                </nav>
+                <nav class="header__menu_adaptive">
+                    <a class="header__menu_adaptive-link" href="#About">About</a>
+                    <a class="header__menu_adaptive-link" href="#Features">Features</a>
+                    <a class="header__menu_adaptive-link " href="#Progress">Progress</a>
+                    <a class="header__menu_adaptive-link" href="#Works">Works</a>
+                </nav>
+                <div class="header__content">
+                    <p>[ Designed by myself ]</p>
+                    <h1>New age of design</h1>
+                    <h2>Your view is really important!</h2>
+                    <div class="header__content_button">
+                        <span class="button-to-bottom_info">Send me message</span>
+                        <a class="button-to-bottom" href="#Contacts">
+                            <div class="button-to-bottom_arrow"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- About -->
+    <div class="about" id="About">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__header">
+                    <h2 class="about__header_title">Some info about me</h2>
+                </div>
+                <div class="about__content">
+                    <div class="about__content_my-photo">
+                        <div class="my-photo_image">
+                            <img src="images/my-photo.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="about__content_info">
+                        <p>Name - Ilya</p>
+                        <p>Age - 25</p>
+                        <p>Living place - Russia, Moscow</p>
+                        <p>Coding experience - 3 month</p>
+                        <p>English level - Elementary</p>
+                        <p>Waiting for a paycheck - three hundred bucks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features -->
+    <div class="features" id="Features">
+        <div class="container">
+            <div class="features__inner">
+                <div class="features__header">
+                    <h2 class="features__header_title">You'll understand what is the beauty</h2>
+                </div>
+                <div class="features__content">
+                    <div class="features__content_block">
+                        <div class="feature-block">
+                            <h3>Class aptent taciti.</h3>
+                            <p class="feature-block-p">Vestibulum odio arcu, faucibus in ligula in, aliquet ultricies est. Etiam eleifend diam 
+                                id justo posuere ultrices. Etiam dapibus lacus ut libero viverra venenatis. 
+                                Nullam sagittis mollis ante in gravida.</p>
+                            <span class="special-characters">&#10052;</span>
+                        </div>
+                    </div>
+                    <div class="features__content_block">
+                        <div class="feature-block">
+                            <h3>Class aptent taciti.</h3>
+                            <p class="feature-block-p">Vestibulum odio arcu, faucibus in ligula in, aliquet ultricies est. Etiam eleifend diam 
+                                id justo posuere ultrices. Etiam dapibus lacus ut libero viverra venenatis. 
+                                Nullam sagittis mollis ante in gravida.</p>
+                            <span class="special-characters">&#10059;</span>
+                        </div>
+                    </div>
+                    <div class="features__content_block">
+                        <div class="feature-block">
+                            <h3>Class aptent taciti.</h3>
+                            <p class="feature-block-p">Vestibulum odio arcu, faucibus in ligula in, aliquet ultricies est. Etiam eleifend diam 
+                                id justo posuere ultrices. Etiam dapibus lacus ut libero viverra venenatis. 
+                                Nullam sagittis mollis ante in gravida.</p>
+                            <span class="special-characters">&#9745;</span>
+                        </div>
+                    </div>
+                    <div class="features__content_block">
+                        <div class="feature-block">
+                            <h3>Class aptent taciti.</h3>
+                            <p class="feature-block-p">Vestibulum odio arcu, faucibus in ligula in, aliquet ultricies est. Etiam eleifend diam 
+                                id justo posuere ultrices. Etiam dapibus lacus ut libero viverra venenatis. 
+                                Nullam sagittis mollis ante in gravida.</p>
+                            <span class="special-characters">&#10050;</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="features__button">
+                    <span class="features__button-text">Press me</span>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Progress -->
+    <div class="progress" id="Progress">
+        <div class="container">
+            <div class="progress__inner">
+                <div class="progress__header">
+                    <h2 class="progress__header_title">This is my progress of web development</h2>
+                </div>
+                <div class="progress__content">
+                    <div class="progress__content_levels">
+                        <h4 class="progress__content_level">Elementary</h4>
+                        <h4 class="progress__content_level">Pre-Intermediate</h4>
+                        <h4 class="progress__content_level">Intermediate</h4>
+                        <h4 class="progress__content_level">Upper-Intermediate</h4>
+                        <h4 class="progress__content_level">Advanced</h4>
+                        <h4 class="progress__content_level">Proficiency</h4>
+                    </div>
+                    <div class="progress__content_frontend">
+                        <div class="progress__content_skill">
+                            <h4 class="progress__content_skill-name">HTML</h4>
+                            <div class="progress-scales">
+                                <div class="progress-scale progress-scale_noBlock">
+                                    <div class="progress-scale_color progress-scale_noColor" style="width: 40%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress__content_skill">
+                            <h4 class="progress__content_skill-name">CSS</h4>
+                            <div class="progress-scales">
+                                <div class="progress-scale progress-scale_noBlock">
+                                    <div class="progress-scale_color progress-scale_noColor" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress__content_skill">
+                            <h4 class="progress__content_skill-name">JS</h4>
+                            <div class="progress-scales">
+                                <div class="progress-scale progress-scale_noBlock">
+                                    <div class="progress-scale_color progress-scale_noColor" style="width: 20%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress__content_backend">
+                        <div class="progress__content_skill">
+                            <h4 class="progress__content_skill-name">Python</h4>
+                            <div class="progress-scales">
+                                <div class="progress-scale progress-scale_noBlock">
+                                    <div class="progress-scale_color progress-scale_noColor" style="width: 30%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress__content_skill">
+                            <h4 class="progress__content_skill-name">Test</h4>
+                            <div class="progress-scales">
+                                <div class="progress-scale progress-scale_noBlock">
+                                    <div class="progress-scale_color progress-scale_noColor" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Works -->
+    <div class="works" id="Works">
+        <div class="container">
+            <div class="works__inner">
+                <div class="works__header">
+                    <h2 class="works__header_title">Some my own projects</h2>
+                </div>
+                <div class="works__content">
+                    <a class="works__slide" href="works/project1/index.html" target="_blank">
+                        <img src="images/works/work-1.jpg" alt="">
+                    </a>
+                    <a class="works__slide" href="works/project2/index.html" target="_blank">
+                        <img src="images/works/work-2.jpg" alt=""> 
+                    </a>
+                    <a class="works__slide" href="works/project3/index.html" target="_blank">
+                        <img src="images/works/work-3.jpg" alt="">
+                    </a>
+                    <div class="slide__arrows">
+                        <button class="slide__left"></button>
+                        <button class="slide__right"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacts & Footer -->
+    <div class="contacts" id="Contacts">
+        <div class="container">
+            <div class="contacts__inner">
+                <div class="contacts__header">
+                    <h2 class="contacts__header_title">Use this form to touch with me</h2>
+                </div>
+                <div class="contacts__content">
+                    <form action="#" id="form" class="contacts__form">
+                        <div class="form__item">
+                            <input id="formName" type="text" name="name" class="form__input" maxlength="100" placeholder="Name*" required>
+                            <input id="formEmail" type="text" name="Email" class="form__input" maxlength="100" placeholder="E-mail*" required>
+                        </div>
+                        <div class="form__item">
+                            <input id="formPhone" type="text" name="Phone" class="form__input" maxlength="100" placeholder="Phone number">
+                        </div>
+                        <div class="form__item">
+                            <textarea id="formMessage" name="Message" class="form__input" maxlength="400" placeholder="Message*" required></textarea>
+                        </div>
+                        <button type="submit" class="form__button"><span>Submit</span></button>
+                    </form>
+                    <div class="contacts__form-submit contacts__form-submit_anim">
+                        <span>The message sent successfully!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <!-- <div class="footer__block">
+                        <h4>Phone</h4>
+                        <a href="tel:+4733378901" class="footer__contacts">+47 333 78 901</a>
+                    </div>
+                    <div class="footer__block">
+                        <h4>E-mail</h4>
+                        <a href="mailto:someone@example.com" class="footer__contacts">someone@example.com</a>
+                    </div> -->
+                    <div class="footer__block">
+                        <h4>Social networks</h4>
+                        <div class="social__icons">
+                            <a class="social-icon" href="https://www.whatsapp.com/" target="_blank">
+                                <svg class="whatsapp-icon">
+                                    <use xlink:href="#whatsapp"></use>
+                                </svg>
+                            </a>
+                            <a class="social-icon" href="https://web.telegram.org/" target="_blank">
+                                <svg class="telegram-icon">
+                                    <use xlink:href="#telegram"></use>
+                                </svg>
+                            </a>
+                            <a class="social-icon" href="https://www.instagram.com/" target="_blank">
+                                <svg class="instagram-icon">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

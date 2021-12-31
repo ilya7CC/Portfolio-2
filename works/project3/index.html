@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Creatives</title>
+</html>
+<body>
+    <!-- Sprites -->
+    <svg style="display: none;">
+
+        <symbol id="facebook" viewBox="0 0 512 512">
+            <g><path d="M308.3,508.5c-2.5,0.1-4.1,0.3-5.7,0.3c-34.2,0-68.3-0.1-102.5,0.1c-4.8,0-6.1-1.3-6.1-6.1c0.1-79.6,0.1-159.3,0.1-238.9   c0-2.1,0-4.2,0-6.9c-18.6,0-36.7,0-55.1,0c0-28.4,0-56.3,0-85c1.9,0,3.7,0,5.4,0c15,0,30-0.1,45,0.1c3.8,0,4.8-1.1,4.8-4.8   c-0.2-22.3-0.2-44.7,0-67c0.1-15.6,2.6-30.8,9.8-44.9c10.3-19.9,26.6-32.8,47.2-40.8c16.8-6.6,34.5-9,52.3-9.3   c29-0.4,58-0.2,87-0.3c2.7,0,4.9-0.1,4.9,3.7c-0.1,27.5-0.1,55-0.1,82.5c0,0.3-0.1,0.6-0.5,1.9c-1.7,0-3.6,0-5.5,0   c-18,0-36-0.1-54,0c-10.4,0-18.8,4.2-24.1,13.3c-1.6,2.7-2.6,6.2-2.6,9.4c-0.3,17,0,34-0.2,51c0,4,1.2,5.1,5.1,5.1   c25-0.2,50-0.1,75-0.1c2,0,3.9,0,7.3,0c-3.5,28.6-6.9,56.6-10.4,84.9c-26,0-51.3,0-77.1,0C308.3,340.8,308.3,424.4,308.3,508.5z"/></g>
+        </symbol>
+
+        <symbol id="skype" viewBox="0 0 30 30">
+            <g><path d="M26.884,16.579C26.953,16.061,27,15.536,27,15c0-6.627-5.373-12-12-12c-0.536,0-1.061,0.047-1.579,0.116 C12.279,2.413,10.939,2,9.5,2C5.358,2,2,5.358,2,9.5c0,1.439,0.413,2.779,1.116,3.921C3.047,13.939,3,14.464,3,15 c0,6.627,5.373,12,12,12c0.536,0,1.061-0.047,1.579-0.116C17.721,27.587,19.061,28,20.5,28c4.142,0,7.5-3.358,7.5-7.5 C28,19.061,27.587,17.721,26.884,16.579z M15.149,22c-3.896,0-6.133-2.042-6.133-4.046c0-1.022,1.07-1.349,1.498-1.349 c0.989,0,1.318,0.807,1.498,1.177c1.005,2.066,1.971,1.794,2.923,1.884c0.841,0.079,2.815-0.292,2.815-1.734 c0-0.138,0.217-1.076-1.487-1.541c-1.089-0.298-3.009-0.663-4.589-1.271c-1.486-0.572-2.358-1.75-2.358-3.268 C9.316,11.093,9.705,8,14.967,8c3.512,0,5.384,1.799,5.384,3.382c0,0.364-0.139,0.685-0.418,0.974 c-0.279,0.289-1.065,0.712-1.926,0.161c-0.217-0.139-0.396-0.428-0.61-0.803c-0.258-0.471-0.68-1.381-2.623-1.381 c-1.885,0-2.408,0.899-2.408,1.274c0,1.26,2.405,1.525,3.051,1.692c2.358,0.608,5.566,1.167,5.566,4.346 C20.983,21.295,17.185,22,15.149,22z"/></g>
+        </symbol>
+
+        <symbol id="twitter" viewBox="0 0 128 128">
+            <g><path d="M128,23.294    c-4.703,2.142-9.767,3.59-15.079,4.237c5.424-3.328,9.587-8.606,11.548-14.892c-5.079,3.082-10.691,5.324-16.687,6.526    c-4.778-5.231-11.608-8.498-19.166-8.498c-14.493,0-26.251,12.057-26.251,26.927c0,2.111,0.225,4.16,0.676,6.133    C41.217,42.601,21.871,31.892,8.91,15.582c-2.261,3.991-3.554,8.621-3.554,13.552c0,9.338,4.636,17.581,11.683,22.412    c-4.297-0.131-8.355-1.356-11.901-3.359v0.331c0,13.051,9.053,23.937,21.074,26.403c-2.201,0.632-4.523,0.948-6.92,0.948    c-1.69,0-3.343-0.162-4.944-0.478c3.343,10.694,13.035,18.483,24.53,18.691c-8.986,7.227-20.315,11.533-32.614,11.533    c-2.119,0-4.215-0.123-6.266-0.37c11.623,7.627,25.432,12.088,40.255,12.088c48.309,0,74.717-41.026,74.717-76.612    c0-1.171-0.023-2.342-0.068-3.49C120.036,33.433,124.491,28.695,128,23.294"/></g>
+        </symbol>
+
+        <symbol id="linkedin" viewBox="0 0 30 30">
+            <g><path d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z"/></g>
+        </symbol>
+
+
+        <symbol id="nav" viewBox="0 0 24 24">
+            <g><path d="M1,6H23a1,1,0,0,0,0-2H1A1,1,0,0,0,1,6Z"/><path d="M23,9H1a1,1,0,0,0,0,2H23a1,1,0,0,0,0-2Z"/><path d="M23,19H1a1,1,0,0,0,0,2H23a1,1,0,0,0,0-2Z"/><path d="M23,14H1a1,1,0,0,0,0,2H23a1,1,0,0,0,0-2Z"/></g>
+        </symbol>
+
+        <symbol id="arrow-bottom" viewBox="0 0 24 24">
+            <g><path d="M1.51,6.079a1.492,1.492,0,0,1,1.06.44l7.673,7.672a2.5,2.5,0,0,0,3.536,0L21.44,6.529A1.5,1.5,0,1,1,23.561,8.65L15.9,16.312a5.505,5.505,0,0,1-7.778,0L.449,8.64A1.5,1.5,0,0,1,1.51,6.079Z"/></g>
+        </symbol>
+
+
+    </svg>
+    <!-- /Sprites -->
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="header__menu">
+                    <div class="header__menu_logo">
+                        <div class="rectangle-1">
+                            <div class="rectangle-2">CS</div>
+                        </div>
+                    </div>
+                    <nav class="header__menu_nav">
+                        <a class="header__menu_link active" href="">Home</a>
+                        <a class="header__menu_link" href="">Pages</a>
+                        <a class="header__menu_link" href="">Features</a>
+                        <a class="header__menu_link" href="">Extensions</a>
+                        <a class="header__menu_link" href="">Tutorials</a>
+                        <a class="header__menu_link" href="">Contact us</a>
+                    </nav>
+                    <div class="social-icons">
+                        <a class="social-icons_icon" href="https://www.facebook.com/">
+                            <svg class="icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social-icons_icon" href="https://www.twitter.com/">
+                            <svg class="icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="social-icons_icon" href="https://www.skype.com/">
+                            <svg class="icon">
+                                <use xlink:href="#skype"></use>
+                            </svg>
+                        </a>
+                        <a class="social-icons_icon" href="https://www.linkedin.com/">
+                            <svg class="icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <nav class="header__menu_nav--smart">
+                        <button class="header__nav-button">
+                            <svg class="nav-button">
+                                <use xlink:href="#nav"></use>
+                            </svg>
+                        </button>
+                    </nav>
+                </div>
+                <div class="header__content">
+                    <h1>Creatives</h1>
+                    <h2>Power by PSDfreebies.com</h2>
+                    <div class="scroll-down">
+                        <span>Scroll Down</span>
+                        <a class="circle" href="#footer">
+                            <div class="arrow-down"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /Header -->
+
+    <!-- About -->
+    <div class="about">
+        <div class="container">
+            <div class="about-inner">
+                <div class="about-inner__heading">
+                    <h1 class="h1-after-header">W</h1>
+                    <h2 class="h2-after-header">We Are An Awesome Agency</h2>
+                </div>
+                <div class="about-inner__features">
+                    <div class="about-inner__feature">
+                        <div class="circle">    
+                            <img src="images/agency/feature-1.png" alt="">
+                        </div>
+                        <h3>Feature one</h3>
+                        <button class="about-inner__open-button">
+                            <svg class="arrow-bottom">
+                                <use xlink:href="#arrow-bottom"></use>
+                            </svg>
+                        </button>
+                        <p>Aenean lacinia bibendum nulla sed consectetur. 
+                            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor 
+                            auctor.Donec id elit non mi porta gravida at eget metus.
+                        </p>
+                    </div>
+                    <div class="about-inner__feature">
+                        <div class="circle">
+                            <img src="images/agency/feature-2.png" alt="">
+                        </div>
+                        <h3>Feature two</h3>
+                        <button class="about-inner__open-button">
+                            <svg class="arrow-bottom">
+                                <use xlink:href="#arrow-bottom"></use>
+                            </svg>
+                        </button>
+                        <p>Aenean lacinia bibendum nulla sed consectetur. 
+                            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor 
+                            auctor.Donec id elit non mi porta gravida at eget metus.
+                        </p>
+                    </div>
+                    <div class="about-inner__feature">
+                        <div class="circle">
+                            <img src="images/agency/feature-3.png" alt="">
+                        </div>  
+                        <h3>Feature three</h3>
+                        <button class="about-inner__open-button">
+                            <svg class="arrow-bottom">
+                                <use xlink:href="#arrow-bottom"></use>
+                            </svg>
+                        </button>
+                        <p>Aenean lacinia bibendum nulla sed consectetur. 
+                            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor 
+                            auctor.Donec id elit non mi porta gravida at eget metus.
+                        </p>
+                    </div>
+                    <div class="about-inner__feature">
+                        <div class="circle">
+                            <img src="images/agency/feature-4.png" alt="">
+                        </div>
+                        <h3>Feature four</h3>
+                        <button class="about-inner__open-button">
+                            <svg class="arrow-bottom">
+                                <use xlink:href="#arrow-bottom"></use>
+                            </svg>
+                        </button>
+                        <p>Aenean lacinia bibendum nulla sed consectetur. 
+                            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor 
+                            auctor.Donec id elit non mi porta gravida at eget metus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /About -->
+
+    <!-- News -->
+    <div class="news">
+        <div class="container">
+            <div class="news-inner">
+                <div class="news-block">
+                    <div class="news-inner__description-block dark">
+                        <div class="description-block_publication">
+                            Jan 4, 2016 | In Culture
+                        </div>
+                        <h3>Akita Inu Dog</h3>
+                        <p>
+                                Cum sociis natoque penatibus et magnis dis parturient montes, 
+                                nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur 
+                                adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue 
+                                laoreet rutrum faucibus dolor auctor.
+                        </p>
+                        <p>
+                                Donec ullamcorper nulla non metus auctor fringilla. 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Sed posuere consectetur
+                        </p>
+                    </div>
+                    <div class="news-inner__image-block">
+                        <img src="/images/news/news-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="news-block">
+                    <div class="news-inner__description-block light description-block_reserve">
+                        <div class="description-block_published">
+                            Jan 4, 2016 | In Culture
+                        </div>
+                        <h3>Akita Inu Dog</h3>
+                        <p>
+                            Cum sociis natoque penatibus et magnis dis parturient montes, 
+                            nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue 
+                            laoreet rutrum faucibus dolor auctor.
+                        </p>
+                        <p>
+                            Donec ullamcorper nulla non metus auctor fringilla. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Sed posuere consectetur
+                        </p>
+                    </div>
+                    <div class="news-inner__image-block image-block_reserve">
+                        <img src="/images/news/news-2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /News -->
+    
+    <!-- Blog -->
+    <div class="blog">
+        <div class="container">
+            <div class="blog-inner">
+                <div class="blog-inner__heading">
+                    <h1 class="h1-after-header">B</h1>
+                    <h2 class="h2-after-header">Let's blog</h2>
+                </div>
+                <span class="blog-inner__description">We love clean design and advanced digital solutions.</span>
+                <div class="blog-inner__blogs">
+                    <div class="blog-block">
+                        <div class="blog-block__image">
+                            <img src="/images/blog/blog-1.jpg" alt="">
+                        </div>
+                        <h3>Fresh Summer Campaign</h3>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, 
+                            nascetur ridiculus mus. Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. Donec sed odio dui. 
+                            Vivamus sagittis lacus vel augue laoreet rutrum faucibus 
+                            dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere 
+                            consectetur est at lobortis.</p>
+                    </div>
+                    <div class="blog-block">
+                        <div class="blog-block__image">
+                            <img src="/images/blog/blog-2.jpg" alt="">
+                        </div>
+                        <h3>Fresh Summer Campaign</h3>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, 
+                            nascetur ridiculus mus. Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. Donec sed odio dui. 
+                            Vivamus sagittis lacus vel augue laoreet rutrum faucibus 
+                            dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere 
+                            consectetur est at lobortis.</p>
+                    </div>
+                    <div class="blog-block">
+                        <div class="blog-block__image">
+                            <img src="/images/blog/blog-3.jpg" alt="">
+                        </div>
+                        <h3>Fresh Summer Campaign</h3>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, 
+                            nascetur ridiculus mus. Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. Donec sed odio dui. 
+                            Vivamus sagittis lacus vel augue laoreet rutrum faucibus 
+                            dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere 
+                            consectetur est at lobortis.</p>
+                    </div>
+                    <div class="blog-block">
+                        <div class="blog-block__image">
+                            <img src="/images/blog/blog-4.jpg" alt="">
+                        </div>
+                        <h3>Fresh Summer Campaign</h3>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, 
+                            nascetur ridiculus mus. Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. Donec sed odio dui. 
+                            Vivamus sagittis lacus vel augue laoreet rutrum faucibus 
+                            dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere 
+                            consectetur est at lobortis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Blog -->
+
+    <!-- Action -->
+    <div class="action">
+        <div class="container">
+            <div class="action-inner">
+                <div class="action-inner__block">
+                    <div class="action-inner__block_image">
+                        <img src="images/quick action/write.png" alt="">
+                    </div>
+                    <div class="action-inner__block_description">
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus 
+                        sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper 
+                        nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit. Sed posuere consectetur est at lobortis.
+                    </div>
+                </div>
+                <div class="action-inner__block">
+                    <div class="action-inner__block_image">
+                        <img src="images/quick action/write.png" alt="">
+                    </div>
+                    <div class="action-inner__block_description">
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus 
+                        sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper 
+                        nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit. Sed posuere consectetur est at lobortis.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Action -->
+
+    <!-- Key Features -->
+    <div class="key-feature">
+        <div class="container">
+            <div class="key-feature-inner">
+                <div class="key-feature-inner__description">
+                    <h3>Akita Inu Dog</h3>
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, 
+                        nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue 
+                        laoreet rutrum faucibus dolor auctor.
+                        Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor 
+                        sit amet, consectetur adipiscing elit. Sed posuere consectetur est at 
+                        lobortis.</p>
+                    <div class="key-feature-inner__features">
+                        <div class="key-feature-inner__feature key-feature-inner__feature--first">Fully Responsive Design</div>
+                        <div class="key-feature-inner__feature key-feature-inner__feature--second">High Quality Code</div>
+                        <div class="key-feature-inner__feature key-feature-inner__feature--third">Different Headers & Layout</div>
+                    </div>
+                </div>
+                <div class="key-feature-inner__phone-image">
+                    <img src="images/key-feature/key-feature-phone.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Key Features -->
+
+    <!-- Team -->
+    <div class="team">
+        <div class="container">
+            <div class="team-inner">
+                <div class="team-inner__heading">
+                    <h1 class="h1-after-header">T</h1>
+                    <h2 class="h2-after-header">Our Team</h2>
+                </div>
+                <span class="team-inner__description">sales long tail influencer pitch release niche market.</span>
+                <div class="team-inner__members">
+                    <div class="team-inner__member">
+                        <div class="member-image">
+                            <img src="images/team/team-1.jpg" alt="">
+                        </div>
+                        <div class="member-info">
+                            <h3>JOHN SNOW</h3>
+                            <span>CEO</span>
+                        </div>
+                    </div>
+                    <div class="team-inner__member">
+                        <div class="member-image">
+                            <img src="images/team/team-2.jpg" alt="">
+                        </div>
+                        <div class="member-info">
+                            <h3>LADY SANSA</h3>
+                            <span>WebDesigner</span>
+                        </div>
+                    </div>
+                    <div class="team-inner__member">
+                        <div class="member-image">
+                            <img src="images/team/team-3.jpg" alt="">
+                        </div>
+                        <div class="member-info">
+                            <h3>DAVID SMITH</h3>
+                            <span>Photographer</span>
+                        </div>
+                    </div>
+                    <div class="team-inner__member">
+                        <div class="member-image">
+                            <img src="images/team/team-4.jpg" alt="">
+                        </div>
+                        <div class="member-info">
+                            <h3>LADY SANSA</h3>
+                            <span>Photographer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Team -->
+
+    <!-- Contacts -->
+    <div class="contacts">
+        <div class="container">
+            <div class="contacts-inner">
+                <div class="contacts-inner__form">
+                    <div class="contacts-inner__heading">
+                        <h1 class="h1-after-header">C</h1>
+                        <h2 class="h2-after-header">We’d love to hear about your project.</h2>
+                    </div>
+                    <div class="form-info">
+                        <input type="text" class="input" placeholder="Name">
+                        <input type="text" class="input" placeholder="Email">
+                        <input type="text" class="input" placeholder="Phone">
+                    </div>
+                    <div class="form-message">
+                        <textarea placeholder="Message" maxlength="255"></textarea>
+                    </div>
+                    <button class="form-button">Submit</button>
+                </div>
+                <div class="contacts-inner__map">
+                    <img src="images/contact/contact-map.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Contacts -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <span>© 2016 PSDfreebies.com – All Right Reserved</span>
+                <div class="footer-inner__designed">
+                    <img src="images/contact/contact-bee.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+</body>
